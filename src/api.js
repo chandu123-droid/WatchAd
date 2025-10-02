@@ -1,10 +1,10 @@
+// src/api.js
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
+const API_BASE = 'https://watchads-backend-1.onrender.com'; // use your live backend URL
 
 const api = axios.create({ baseURL: API_BASE });
 
-// Attach token automatically
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('token');
   if (token) config.headers.Authorization = `Bearer ${token}`;
