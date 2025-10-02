@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WatchAds</string>
+    <string name="title_activity_main">WatchAds</string>
+    <string name="package_name">com.myemail.watchads</string>
+    <string name="custom_url_scheme">com.myemail.watchads</string>
+</resources>
